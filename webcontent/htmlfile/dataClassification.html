@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content=" Senstive information">
+  <link rel="icon" href="./assets/images/favicon.png">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel=”stylesheet” href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <!-- TensorFlow JS and Tesseract -->
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs/dist/tf.min.js"></script>
+  <script src="https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="title"><a href="">Image Classification</a></div>
+    <div class="toggle-button">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <div class="navbar-links">
+      <ul>
+        <li class="darkmode-button">
+          <input type="checkbox" class="checkbox" id="chk" />
+
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="main-container">
+    <button class="browse">Browse File</button>
+    <div id="progressStatus">
+      <div id="progressBar">1%</div>
+    </div>
+    <div class="classification non-sensitive main-title"><i class="fas fa-square"></i> Non-Sensitive</div>
+    <div class="classification sensitive main-title"><i class="fas fa-circle"></i> Sensitive</div>
+
+    <div class="drag-area">
+      <div class="icon green-color"><i class="fas fa-file-upload .green-color"></i></div>
+      <header class>Upload Image File(JPG/JPEG/PNG)</header>
+      <input type="file" onchange="loadFile(event)" hidden>
+      <img src="#" id="output">
+    </div>
+  </div>
+  </div>
+
+
+
+
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <div class="firefly"></div>
+  <script src="../jsfile/script.js"></script>
+
+</body>
+
+</html>
