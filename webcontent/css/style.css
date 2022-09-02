@@ -151,10 +151,11 @@ a {
 .main-title {
     padding: 10px;
     letter-spacing: 2px;
-    font-size: 1.5rem;
+    font-size: 1.5 rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
 }
 
 .main-container {
@@ -453,13 +454,22 @@ button:active,
     font-size: 17px;
 }
 
-.classification {
+.classification-sen {
     display: none;
     border-width: 5px;
     border-style: outset;
     padding: 5px;
     width: auto;
-    color: var(--foreground);
+    color: red;
+}
+
+.classification-nonsen {
+    display: none;
+    border-width: 5px;
+    border-style: outset;
+    padding: 5px;
+    width: auto;
+    color: rgb(43, 99, 43);
 }
 
 .fa-square {
@@ -476,14 +486,14 @@ button:active,
     min-width: 300px;
     margin: 5px;
     padding: 10px;
-    background-color: var(--color-secondary);
+    background-color: rgba(18, 46, 6, 0.858);
 }
 
 #progressBar {
     display: none;
     width: 1%;
     height: 30px;
-    background-color: var(--color-primary);
+    background-color: rgba(18, 46, 6, 0.858);
     text-align: center;
     line-height: 32px;
     font-size: large;
